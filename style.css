@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background: hsl(0, 0%, 86%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 2.3rem;
+  border-radius: 1.5em;
+  border-bottom-right-radius: 8em;
+  margin: 3em;
+}
+.input {
+  width: 100%;
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  /* border: 2px solid red; */
+}
+
+.input-fields {
+  display: flex;
+  gap: 1.5em;
+}
+
+hr {
+  height: 0;
+  margin-block: 2em;
+  width: 80%;
+  border: 0.1px solid #e3e3e3;
+}
+
+.horizontal-line {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input label {
+  width: 50%;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 42%);
+  font-weight: bold;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  /* border: 2px solid red; */
+  background: hsl(259, 100%, 65%);
+}
+
+.circle i {
+  font-size: 2rem;
+}
+
+.circle:hover {
+  cursor: pointer;
+  background: #000;
+  transition: 0.1s ease-in;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input:hover,
+input:active,
+input:focus {
+  border: 1px solid hsl(259, 100%, 24%);
+  cursor: pointer;
+  outline: none;
+}
+
+.output {
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.highlight {
+  color: hsl(259, 100%, 65%);
+}
+
+.error {
+  color: hsl(0, 100%, 67%) !important;
+}
+
+.input-error input {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+
+.error-empty {
+  font-size: 0.6rem;
+  color: hsl(0, 100%, 67%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    border-bottom-right-radius: 6em;
+  }
+
+  .output {
+    font-size: 1.3rem;
+    margin-top: 0.5em;
+  }
+
+  .input-fields {
+    margin-bottom: 1em;
+  }
+
+  .horizontal-line {
+    position: relative;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .circle {
+    position: absolute;
+    margin-block: 2em;
+    width: 50px;
+    height: 50px;
+  }
+}
